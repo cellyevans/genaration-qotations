@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+    color: #efefef;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(./image/stone.jpg) no-repeat center center/cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(80, 11, 145, 0.7);
+}
+.container {
+    position: relative;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .quote-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quote-container .quote-title {
+    font-size: 30px;
+    text-transform: capitalize;
+    line-height: 40px;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.quote-container .quote-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.quote-body .quote-text {
+    width: 70%;
+    text-align: center;
+}
+
+.quote-body .quoted-by {
+    margin: 2rem 0;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.container .generate-quotes {
+    padding: .5rem 2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    background-color: #ff4500;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #efefef;
+    cursor: pointer;
+}
